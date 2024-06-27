@@ -1,0 +1,73 @@
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-extra-args.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-naming-conventions.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-mutate.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap-naming-conventions.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/358/[22m[1m358.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/[22m[1mapp.service.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/profiles/[22m[1muser.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/[22m[1mapp.controller.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/foo-extend/[22m[1mfoo-extend.controller.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/profiles/[22m[1mavatar.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/foo/[22m[1mfoo.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/profiles/[22m[1mbio.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/foo-extend/[22m[1mfoo-extend.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/profiles/[22m[1maddress.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-type-converter.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap-self.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-self.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/docs/auto-flattening/[22m[1mauto-flattening.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/docs/tutorial/[22m[1mdocs-tutorial.spec.ts[22m
+  [1m● [22mConsole
+
+    [2mconsole.log[22m
+      UserDto {
+        firstName: 'Chau',
+        lastName: 'Tran',
+        username: 'ctran',
+        bio: BioDto {
+          jobTitle: 'Developer',
+          jobSalary: 99999,
+          birthday: 'Thu Jun 27 2024',
+          avatarUrl: 'google.com'
+        },
+        fullName: 'Chau Tran'
+      }
+[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/classes/docs/tutorial/docs-tutorial.spec.ts[39m[0m[2m:55:17)[22m[2m[22m
+
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-custom-constructor.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap-type-converter.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/457/[22m[1m457.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap-mutate.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-self-reference.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-chained.spec.ts[22m
+  [1m● [22mConsole
+
+    [2mconsole.log[22m
+      C { c: 'value!!!!!!', extraC: 'value extra!!' }
+[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/classes/map-chained.spec.ts[39m[0m[2m:70:17)[22m[2m[22m
+
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap-deep-nest.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-async.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-callback.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-deep-nest.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/479/[22m[1m479.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-without-decorators.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/480/[22m[1m480.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/396/[22m[1m396.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/503/[22m[1m503.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-getter-only.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/497/[22m[1m497.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-spacex.spec.ts[22m ([0m[1m[41m5.285 s[49m[22m[0m)
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/527/[22m[1m527.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-condition-substitution-model.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/transformer-plugin/[22m[1mtransformer-plugin.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m42 passed[39m[22m, 42 total
+[1mTests:       [22m[1m[32m114 passed[39m[22m, 114 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        [1m[33m8.661 s[39m[22m
+[2mRan all test suites[22m[2m.[22m

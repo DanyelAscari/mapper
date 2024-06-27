@@ -1,0 +1,120 @@
+{
+  "run": {
+    "command": "nx run-many --all --target=test --parallel",
+    "startTime": "2024-06-27T23:23:15.664Z",
+    "endTime": "2024-06-27T23:23:25.770Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "classes:test",
+      "target": "test",
+      "projectName": "classes",
+      "hash": "7020485110830424741",
+      "startTime": "2024-06-27T23:23:15.674Z",
+      "endTime": "2024-06-27T23:23:15.766Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "core:test",
+      "target": "test",
+      "projectName": "core",
+      "hash": "11810748786386133806",
+      "startTime": "2024-06-27T23:23:15.673Z",
+      "endTime": "2024-06-27T23:23:15.770Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "nestjs:test",
+      "target": "test",
+      "projectName": "nestjs",
+      "hash": "7234015214531560447",
+      "startTime": "2024-06-27T23:23:15.775Z",
+      "endTime": "2024-06-27T23:23:15.781Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "pojos:test",
+      "target": "test",
+      "projectName": "pojos",
+      "hash": "6697072355996870401",
+      "startTime": "2024-06-27T23:23:15.778Z",
+      "endTime": "2024-06-27T23:23:15.785Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "classes-mapped-types:test",
+      "target": "test",
+      "projectName": "classes-mapped-types",
+      "hash": "6553314102150602947",
+      "startTime": "2024-06-27T23:23:15.790Z",
+      "endTime": "2024-06-27T23:23:15.796Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "sequelize:test",
+      "target": "test",
+      "projectName": "sequelize",
+      "hash": "15233994204072298931",
+      "startTime": "2024-06-27T23:23:15.801Z",
+      "endTime": "2024-06-27T23:23:15.806Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "mikro:test",
+      "target": "test",
+      "projectName": "mikro",
+      "hash": "18284899054107405248",
+      "startTime": "2024-06-27T23:23:15.811Z",
+      "endTime": "2024-06-27T23:23:15.815Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "zod:test",
+      "target": "test",
+      "projectName": "zod",
+      "hash": "8000637014342527627",
+      "startTime": "2024-06-27T23:23:15.820Z",
+      "endTime": "2024-06-27T23:23:15.825Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "classes-transformer-plugin:test",
+      "target": "test",
+      "projectName": "classes-transformer-plugin",
+      "hash": "15141879317534677719",
+      "startTime": "2024-06-27T23:23:15.674Z",
+      "endTime": "2024-06-27T23:23:17.105Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "integration-test:test",
+      "target": "test",
+      "projectName": "integration-test",
+      "hash": "12043266253868472876",
+      "startTime": "2024-06-27T23:23:15.793Z",
+      "endTime": "2024-06-27T23:23:25.769Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

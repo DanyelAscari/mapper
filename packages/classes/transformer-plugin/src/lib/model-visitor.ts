@@ -159,7 +159,7 @@ export class ModelVisitor {
 
         // if the target is CommonJS, keep as is
         if (ModelVisitor.isCommonJS) {
-            return visitedSourceFile;
+            return visitedSourceFile!;
         }
 
         // if the target is not CommonJS, we need to re-map the imports

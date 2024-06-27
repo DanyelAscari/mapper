@@ -1,0 +1,48 @@
+[33m[1m[1m●[22m[1m Validation Warning[22m:[39m
+[33m[39m
+[33m  Unknown option [1m"coverageDirectory"[22m with value [1m"../../coverage/packages/core"[22m was found.[39m
+[33m  This is probably a typing mistake. Fixing it will remove this message.[39m
+[33m[39m
+[33m  [1mConfiguration Documentation:[22m[39m
+[33m  https://jestjs.io/docs/configuration[39m
+[33m[39m
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151001: [0mIf you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151001: [0mIf you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151001: [0mIf you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151001: [0mIf you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151001: [0mIf you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151001: [0mIf you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151001: [0mIf you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151001: [0mIf you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151001: [0mIf you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/naming-conventions/specs/[22m[1mpascal-case-naming-convention.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/utils/specs/[22m[1mset.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/mapping-configurations/specs/[22m[1mtype-converters.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/naming-conventions/specs/[22m[1mcamel-case-naming-convention.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mcondition.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mmap-with-arguments.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/naming-conventions/specs/[22m[1msnake-case-naming-convention.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mmap-with.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mpre-condition.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/mapping-configurations/specs/[22m[1mfor-self.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mmap-from.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mnull-substitution.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/utils/specs/[22m[1mis-primitive-array-equal.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mconvert-using.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/mapping-configurations/specs/[22m[1mbefore-map.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/mapping-configurations/specs/[22m[1mnaming-conventions.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/utils/specs/[22m[1mis-defined.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mfrom-value.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mundefined-substitution.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/mapping-configurations/specs/[22m[1mextend.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/mapping-configurations/specs/[22m[1mafter-map.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/utils/specs/[22m[1mget.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mmap-defer.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/member-map-functions/specs/[22m[1mignore.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m core [39m[27m[0m [2mpackages/core/src/lib/mapping-configurations/specs/[22m[1mconstruct-using.spec.ts[22m
+
+[1mTest Suites: [22m[1m[33m1 skipped[39m[22m, [1m[32m25 passed[39m[22m, 25 of 26 total
+[1mTests:       [22m[1m[33m1 skipped[39m[22m, [1m[32m71 passed[39m[22m, 72 total
+[1mSnapshots:   [22m[1m[32m4 passed[39m[22m, 4 total
+[1mTime:[22m        5.411 s
+[2mRan all test suites[22m[2m.[22m

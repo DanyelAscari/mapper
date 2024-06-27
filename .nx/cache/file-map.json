@@ -1,0 +1,2947 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.3.2",
+  "deps": {
+    "@swc/helpers": "~0.5.2",
+    "tslib": "^2.6.2",
+    "@mikro-orm/core": "5.6.13",
+    "@nestjs/common": "^10.3.8",
+    "@nestjs/core": "^10.3.8",
+    "@nestjs/platform-express": "^10.3.8",
+    "@nestjs/schematics": "^10.1.1",
+    "@nestjs/testing": "^10.3.8",
+    "@nrwl/devkit": "15.8.5",
+    "@nrwl/eslint-plugin-nx": "15.8.5",
+    "@nrwl/jest": "15.8.5",
+    "@nrwl/js": "15.8.5",
+    "@nrwl/linter": "15.8.5",
+    "@nrwl/nest": "15.8.5",
+    "@nrwl/nx-cloud": "15.2.0",
+    "@nrwl/rollup": "15.8.5",
+    "@nrwl/web": "15.8.5",
+    "@nrwl/workspace": "15.8.5",
+    "@release-it/bumper": "4.0.2",
+    "@release-it/conventional-changelog": "5.1.1",
+    "@swc/cli": "~0.1.65",
+    "@swc/core": "~1.3.107",
+    "@swc/jest": "0.2.20",
+    "@types/jest": "^29.5.12",
+    "@types/node": "18.16.9",
+    "@types/supertest": "2.0.12",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "all-contributors-cli": "6.24.0",
+    "babel-preset-minify": "0.5.2",
+    "commitizen": "4.3.0",
+    "cz-customizable": "7.0.0",
+    "dotenv-cli": "^7.0.0",
+    "eslint": "8.46.0",
+    "eslint-config-prettier": "^9.1.0",
+    "fs-extra": "^11.1.0",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "nx": "^17.1.3",
+    "prettier": "^3.0.1",
+    "reflect-metadata": "^0.1.14",
+    "release-it": "^15.8.0",
+    "rxjs": "^7.8.1",
+    "sequelize": "6.29.2",
+    "supertest": "6.3.3",
+    "ts-jest": "29.0.5",
+    "ts-node": "10.9.1",
+    "typescript": "4.9.5"
+  },
+  "pathMappings": {
+    "@automapper/classes": [
+      "packages/classes/src/index.ts"
+    ],
+    "@automapper/classes/mapped-types": [
+      "packages/classes/mapped-types/src/index.ts"
+    ],
+    "@automapper/classes/transformer-plugin": [
+      "packages/classes/transformer-plugin/src/index.ts"
+    ],
+    "@automapper/core": [
+      "packages/core/src/index.ts"
+    ],
+    "@automapper/integration-test": [
+      "packages/integration-test/src/index.ts"
+    ],
+    "@automapper/mikro": [
+      "packages/mikro/src/index.ts"
+    ],
+    "@automapper/nestjs": [
+      "packages/nestjs/src/index.ts"
+    ],
+    "@automapper/pojos": [
+      "packages/pojos/src/index.ts"
+    ],
+    "@automapper/sequelize": [
+      "packages/sequelize/src/index.ts"
+    ],
+    "@automapper/zod": [
+      "packages/zod/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nrwl/js": {
+      "analyzeSourceFiles": true
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "jest.config.ts",
+        "hash": "18061291356014397373"
+      },
+      {
+        "file": ".nx/cache/d/server-process.json",
+        "hash": "13950285659416601726"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "17007804877608780048"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "5700436638922302855"
+      },
+      {
+        "file": ".cz-config.js",
+        "hash": "10478454072046540929"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "11141313177346218042"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "11395711302850740723"
+      },
+      {
+        "file": ".env-example",
+        "hash": "18196020122567716878"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "17733650430415207254"
+      },
+      {
+        "file": ".release-it.json",
+        "hash": "6605817897388209633"
+      },
+      {
+        "file": ".github/workflows/docusaurus.yml",
+        "hash": "15643474155803688341"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "6275791828354281206"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/config.yml",
+        "hash": "338630314076574148"
+      },
+      {
+        "file": ".github/workflows/unit-test.yml",
+        "hash": "13574981765666533911"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "4598763878092457095"
+      },
+      {
+        "file": "version.json",
+        "hash": "15300176621067632894"
+      },
+      {
+        "file": ".all-contributorsrc",
+        "hash": "7765374418702772230"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "17214741298320977680"
+      },
+      {
+        "file": "nx.json",
+        "hash": "6248438818585199574"
+      },
+      {
+        "file": "tools/scripts/publish.mjs",
+        "hash": "4182270220172468186"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "3421747760098564620"
+      },
+      {
+        "file": "CODE_OF_CONDUCT.md",
+        "hash": "15263377919401288573"
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "hash": "7963488903622303971"
+      },
+      {
+        "file": "tools/generators/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "babel.config.json",
+        "hash": "15753941481085060538"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "7046096901004401276"
+      },
+      {
+        "file": "README.md",
+        "hash": "8869883676038505493"
+      },
+      {
+        "file": "tools/scripts/update-plugin-version.mjs",
+        "hash": "14830659768162404160"
+      },
+      {
+        "file": "package.json",
+        "hash": "477371451857747028"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/feature_request.yml",
+        "hash": "16181980834643818636"
+      },
+      {
+        "file": ".github/FUNDING.yml",
+        "hash": "357759313237395452"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "12256590167123650477"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/bug_report.yml",
+        "hash": "6669393133705268240"
+      },
+      {
+        "file": "tools/scripts/update-peer-deps.mjs",
+        "hash": "16727891970115697312"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "6218783759916497557"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "113529236189617652"
+      }
+    ],
+    "projectFileMap": {
+      "classes": [
+        {
+          "file": "packages/classes/.eslintrc.json",
+          "hash": "17869084471460511704"
+        },
+        {
+          "file": "packages/classes/jest.config.cjs",
+          "hash": "5772263246518085654"
+        },
+        {
+          "file": "packages/classes/package.json",
+          "hash": "12426668709356446110",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/classes/project.json",
+          "hash": "13711701052014683594"
+        },
+        {
+          "file": "packages/classes/shim/index.spec.ts",
+          "hash": "5763399348623521570"
+        },
+        {
+          "file": "packages/classes/shim/index.ts",
+          "hash": "10073944919739728618"
+        },
+        {
+          "file": "packages/classes/src/README.md",
+          "hash": "2106784261177883884"
+        },
+        {
+          "file": "packages/classes/src/index.ts",
+          "hash": "840239693340007912"
+        },
+        {
+          "file": "packages/classes/src/lib/automap.ts",
+          "hash": "3696309422220961920",
+          "deps": [
+            "core",
+            "npm:reflect-metadata"
+          ]
+        },
+        {
+          "file": "packages/classes/src/lib/classes.ts",
+          "hash": "4034029730928496012",
+          "deps": [
+            "core",
+            "npm:reflect-metadata"
+          ]
+        },
+        {
+          "file": "packages/classes/src/lib/get-metadata-list.ts",
+          "hash": "12926818946239185384",
+          "deps": [
+            "core",
+            "npm:reflect-metadata"
+          ]
+        },
+        {
+          "file": "packages/classes/src/lib/keys.ts",
+          "hash": "5117049295442846086"
+        },
+        {
+          "file": "packages/classes/src/lib/specs/automap.spec.ts",
+          "hash": "9571838853663414021",
+          "deps": [
+            "npm:reflect-metadata"
+          ]
+        },
+        {
+          "file": "packages/classes/tsconfig.json",
+          "hash": "3458275629212578133"
+        },
+        {
+          "file": "packages/classes/tsconfig.lib.json",
+          "hash": "1984181857071985225"
+        },
+        {
+          "file": "packages/classes/tsconfig.spec.json",
+          "hash": "6017982946827946062"
+        }
+      ],
+      "classes-mapped-types": [
+        {
+          "file": "packages/classes/mapped-types/.eslintrc.json",
+          "hash": "9711169714124487252"
+        },
+        {
+          "file": "packages/classes/mapped-types/jest.config.cjs",
+          "hash": "1994725861596912790"
+        },
+        {
+          "file": "packages/classes/mapped-types/package.json",
+          "hash": "4927599984019611774",
+          "deps": [
+            "core",
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/classes/mapped-types/project.json",
+          "hash": "6479215220612397256"
+        },
+        {
+          "file": "packages/classes/mapped-types/src/README.md",
+          "hash": "11096283444724952612"
+        },
+        {
+          "file": "packages/classes/mapped-types/src/index.ts",
+          "hash": "11913066637367886730"
+        },
+        {
+          "file": "packages/classes/mapped-types/src/lib/mapped-type.ts",
+          "hash": "16322168802296980448",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/classes/mapped-types/src/lib/mapper-intersection-type.ts",
+          "hash": "7054620525297880660",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/classes/mapped-types/src/lib/mapper-omit-type.ts",
+          "hash": "1852471294344956721",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/classes/mapped-types/src/lib/mapper-pick-type.ts",
+          "hash": "16932412408021493716",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/classes/mapped-types/src/lib/specs/mapper-intersection-type.spec.ts",
+          "hash": "14395809426722492808",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/classes/mapped-types/src/lib/specs/mapper-omit-type.spec.ts",
+          "hash": "10395439214562253424",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/classes/mapped-types/src/lib/specs/mapper-pick-type.spec.ts",
+          "hash": "1876672129024514753",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/classes/mapped-types/src/lib/type-helper.ts",
+          "hash": "13451747280732962638",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/classes/mapped-types/tsconfig.json",
+          "hash": "8051832904859583076"
+        },
+        {
+          "file": "packages/classes/mapped-types/tsconfig.lib.json",
+          "hash": "8855556432639356434"
+        },
+        {
+          "file": "packages/classes/mapped-types/tsconfig.spec.json",
+          "hash": "17148873069972420007"
+        }
+      ],
+      "classes-transformer-plugin": [
+        {
+          "file": "packages/classes/transformer-plugin/.eslintrc.json",
+          "hash": "9711169714124487252"
+        },
+        {
+          "file": "packages/classes/transformer-plugin/jest.config.cjs",
+          "hash": "14404870944471903306"
+        },
+        {
+          "file": "packages/classes/transformer-plugin/package.json",
+          "hash": "13002534397921414841",
+          "deps": [
+            "core",
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/classes/transformer-plugin/project.json",
+          "hash": "14191440714395553090"
+        },
+        {
+          "file": "packages/classes/transformer-plugin/src/README.md",
+          "hash": "6434040285168850596"
+        },
+        {
+          "file": "packages/classes/transformer-plugin/src/index.ts",
+          "hash": "14414384508884483131",
+          "deps": [
+            "npm:typescript/lib/tsserverlibrary"
+          ]
+        },
+        {
+          "file": "packages/classes/transformer-plugin/src/lib/constants.ts",
+          "hash": "13137401357652563466"
+        },
+        {
+          "file": "packages/classes/transformer-plugin/src/lib/model-visitor.ts",
+          "hash": "14244673837689590951",
+          "deps": [
+            "classes",
+            "npm:typescript/lib/tsserverlibrary"
+          ]
+        },
+        {
+          "file": "packages/classes/transformer-plugin/src/lib/options.ts",
+          "hash": "9139076931680732104"
+        },
+        {
+          "file": "packages/classes/transformer-plugin/src/lib/utils.ts",
+          "hash": "9448141087434126192",
+          "deps": [
+            "npm:path",
+            "npm:typescript/lib/tsserverlibrary"
+          ]
+        },
+        {
+          "file": "packages/classes/transformer-plugin/src/lib/version.ts",
+          "hash": "18236575136225456542"
+        },
+        {
+          "file": "packages/classes/transformer-plugin/tsconfig.json",
+          "hash": "8051832904859583076"
+        },
+        {
+          "file": "packages/classes/transformer-plugin/tsconfig.lib.json",
+          "hash": "18036665370812562250"
+        },
+        {
+          "file": "packages/classes/transformer-plugin/tsconfig.spec.json",
+          "hash": "17148873069972420007"
+        }
+      ],
+      "mikro": [
+        {
+          "file": "packages/mikro/.eslintrc.json",
+          "hash": "11902604076208507531"
+        },
+        {
+          "file": "packages/mikro/jest.config.cjs",
+          "hash": "13407911203164623197"
+        },
+        {
+          "file": "packages/mikro/package.json",
+          "hash": "14071817727636807965",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/mikro/project.json",
+          "hash": "9710973889254983977"
+        },
+        {
+          "file": "packages/mikro/src/README.md",
+          "hash": "7321103129313892271"
+        },
+        {
+          "file": "packages/mikro/src/index.ts",
+          "hash": "6714860919194938846"
+        },
+        {
+          "file": "packages/mikro/src/lib/mikro.ts",
+          "hash": "3809158977133618539",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/mikro/src/lib/serialize-entity.ts",
+          "hash": "3250250348165829148",
+          "deps": [
+            "core",
+            "npm:@mikro-orm/core",
+            "npm:@mikro-orm/core/typings"
+          ]
+        },
+        {
+          "file": "packages/mikro/tsconfig.json",
+          "hash": "3458275629212578133"
+        },
+        {
+          "file": "packages/mikro/tsconfig.lib.json",
+          "hash": "7439940686882043217"
+        },
+        {
+          "file": "packages/mikro/tsconfig.spec.json",
+          "hash": "6017982946827946062"
+        }
+      ],
+      "sequelize": [
+        {
+          "file": "packages/sequelize/.eslintrc.json",
+          "hash": "6818466597903420099"
+        },
+        {
+          "file": "packages/sequelize/jest.config.cjs",
+          "hash": "7766472391160745847"
+        },
+        {
+          "file": "packages/sequelize/package.json",
+          "hash": "16979503026267555024",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/sequelize/project.json",
+          "hash": "17223718639016338689"
+        },
+        {
+          "file": "packages/sequelize/src/README.md",
+          "hash": "13197541198462942442"
+        },
+        {
+          "file": "packages/sequelize/src/index.ts",
+          "hash": "8835294986589322309"
+        },
+        {
+          "file": "packages/sequelize/src/lib/sequelize.ts",
+          "hash": "1319602930620608116",
+          "deps": [
+            "classes",
+            "core",
+            "npm:sequelize"
+          ]
+        },
+        {
+          "file": "packages/sequelize/tsconfig.json",
+          "hash": "3458275629212578133"
+        },
+        {
+          "file": "packages/sequelize/tsconfig.lib.json",
+          "hash": "7439940686882043217"
+        },
+        {
+          "file": "packages/sequelize/tsconfig.spec.json",
+          "hash": "6017982946827946062"
+        }
+      ],
+      "integration-test": [
+        {
+          "file": "packages/integration-test/.eslintrc.json",
+          "hash": "11902604076208507531"
+        },
+        {
+          "file": "packages/integration-test/README.md",
+          "hash": "12485109651645475431"
+        },
+        {
+          "file": "packages/integration-test/jest-setup.ts",
+          "hash": "10762920043107197735",
+          "deps": [
+            "npm:reflect-metadata"
+          ]
+        },
+        {
+          "file": "packages/integration-test/jest.config.ts",
+          "hash": "5166805814953108317"
+        },
+        {
+          "file": "packages/integration-test/package.json",
+          "hash": "5249020558977068347"
+        },
+        {
+          "file": "packages/integration-test/project.json",
+          "hash": "10249400491893447747"
+        },
+        {
+          "file": "packages/integration-test/src/classes/docs/auto-flattening/auto-flattening.spec.ts",
+          "hash": "17851721996279354719",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/docs/auto-flattening/order.dto.ts",
+          "hash": "3995983183692016369",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/docs/auto-flattening/order.ts",
+          "hash": "16379471608703525085",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/docs/tutorial/docs-tutorial.spec.ts",
+          "hash": "7225544152008557951",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/docs/tutorial/user.dto.ts",
+          "hash": "861106433840635667",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/docs/tutorial/user.ts",
+          "hash": "6152640772475305008",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/dtos/address.dto.ts",
+          "hash": "10567835999723899717",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/dtos/avatar.dto.ts",
+          "hash": "1500572169340762424",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/dtos/bio.dto.ts",
+          "hash": "16588712621778939948",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/dtos/cart-item.dto.ts",
+          "hash": "7871655011759795916",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/dtos/decoratorless-user.dto.ts",
+          "hash": "8353272909769850049"
+        },
+        {
+          "file": "packages/integration-test/src/classes/dtos/deep-nest.dto.ts",
+          "hash": "7379375807211016465",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/dtos/rocket.dto.ts",
+          "hash": "18094999988942804446",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/dtos/simple-user.dto.ts",
+          "hash": "15867482482963081350",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/dtos/type-converter.dto.ts",
+          "hash": "14601831672522768202",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/dtos/user.dto.ts",
+          "hash": "10856472665822938239",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/issues/358/358.spec.ts",
+          "hash": "14175078712866426300",
+          "deps": [
+            "classes",
+            "core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/issues/358/account.ts",
+          "hash": "15657096176933694645",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/issues/396/396.spec.ts",
+          "hash": "14442965348355839758",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/issues/457/457.spec.ts",
+          "hash": "10447035237112361867",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/issues/479/479.spec.ts",
+          "hash": "841472408213360168",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/issues/480/480.spec.ts",
+          "hash": "17648405357913811727",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/issues/497/497.spec.ts",
+          "hash": "10150871668446827941",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/issues/503/503.spec.ts",
+          "hash": "13033212322726057911",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/issues/527/527.spec.ts",
+          "hash": "16978069150983972728",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-async.spec.ts",
+          "hash": "332775345744371431",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-callback.spec.ts",
+          "hash": "9757377155039814559",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-chained.spec.ts",
+          "hash": "18164059419556009776",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-condition-substitution-model.spec.ts",
+          "hash": "4926470372678516774",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-custom-constructor.spec.ts",
+          "hash": "15321991819576783743",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-deep-nest.spec.ts",
+          "hash": "1263712895020977979",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-extra-args.spec.ts",
+          "hash": "7546238081555107826",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-getter-only.spec.ts",
+          "hash": "14682439389746345715",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-mutate.spec.ts",
+          "hash": "12009746894442593588",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-naming-conventions.spec.ts",
+          "hash": "17805260788389871027",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-self-reference.spec.ts",
+          "hash": "11444387789877312005",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-self.spec.ts",
+          "hash": "3269434009991535839",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-spacex.spec.ts",
+          "hash": "12111194473703636592",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-type-converter.spec.ts",
+          "hash": "877618012206423638",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map-without-decorators.spec.ts",
+          "hash": "17445366956354903439",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/map.spec.ts",
+          "hash": "10645113611036592855",
+          "deps": [
+            "classes",
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/address.ts",
+          "hash": "12584385987374979208",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/avatar.ts",
+          "hash": "13879619686019901891",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/bio.ts",
+          "hash": "16590180540868043233",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/cart-item.ts",
+          "hash": "10373249043470653754",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/decoratorless-user.ts",
+          "hash": "7107680286978838918"
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/deep-nest.ts",
+          "hash": "11110138571111012016",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/job.ts",
+          "hash": "11687761909538888061",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/rocket.ts",
+          "hash": "11052334331393336373",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/simple-user.ts",
+          "hash": "4152199069780955825",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/type-converter.ts",
+          "hash": "12814168491315139498",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/models/user.ts",
+          "hash": "16627865697025173275",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/profiles/address.profile.ts",
+          "hash": "4857951708178192223",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/profiles/avatar.profile.ts",
+          "hash": "6444737924666836762",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/profiles/bio.profile.ts",
+          "hash": "12516843992576488583",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/profiles/decoratorless-user.profile.ts",
+          "hash": "8246075996181961056",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/profiles/rocket.profile.ts",
+          "hash": "12438569480860857641",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/profiles/simple-user.profile.ts",
+          "hash": "5343743638649580458",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/profiles/type-converter.profile.ts",
+          "hash": "17180131946416092773",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/profiles/user.profile.ts",
+          "hash": "12425202310550567136",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/classes/utils/get-rocket.ts",
+          "hash": "9323829577558765829"
+        },
+        {
+          "file": "packages/integration-test/src/classes/utils/get-user.ts",
+          "hash": "15882318319521803349"
+        },
+        {
+          "file": "packages/integration-test/src/index.ts",
+          "hash": "7747505847823252959"
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/app.controller.spec.ts",
+          "hash": "10194320136393396505",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/testing",
+            "npm:supertest"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/app.controller.ts",
+          "hash": "5651742645970088632",
+          "deps": [
+            "nestjs",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/app.module.ts",
+          "hash": "4648206120386172561",
+          "deps": [
+            "classes",
+            "core",
+            "nestjs",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/app.service.spec.ts",
+          "hash": "4540175588128590230",
+          "deps": [
+            "classes",
+            "core",
+            "nestjs",
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/app.service.ts",
+          "hash": "4101415832884096787",
+          "deps": [
+            "core",
+            "nestjs",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/foo-extend/foo-extend.controller.spec.ts",
+          "hash": "4340776958834959362",
+          "deps": [
+            "classes",
+            "core",
+            "nestjs",
+            "npm:@nestjs/common",
+            "npm:@nestjs/testing",
+            "npm:supertest"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/foo-extend/foo-extend.controller.ts",
+          "hash": "5525461915372196521",
+          "deps": [
+            "core",
+            "nestjs",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/foo-extend/foo-extend.module.ts",
+          "hash": "12913631511058505639",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/foo-extend/foo-extend.profile.spec.ts",
+          "hash": "11737791510104902848",
+          "deps": [
+            "classes",
+            "core",
+            "nestjs",
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/foo-extend/foo-extend.profile.ts",
+          "hash": "3249615261568175069",
+          "deps": [
+            "core",
+            "nestjs",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/foo-extend/foo-extend.ts",
+          "hash": "13071408449299720768",
+          "deps": [
+            "classes"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/foo/foo.module.ts",
+          "hash": "1976653512279073853",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/foo/foo.profile.spec.ts",
+          "hash": "11132128760617564320",
+          "deps": [
+            "classes",
+            "core",
+            "nestjs",
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/foo/foo.profile.ts",
+          "hash": "8118282312060270981",
+          "deps": [
+            "core",
+            "nestjs",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/foo/foo.ts",
+          "hash": "13868296121044151498"
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/profiles/address.profile.spec.ts",
+          "hash": "10382083643809652080",
+          "deps": [
+            "classes",
+            "core",
+            "nestjs",
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/profiles/address.profile.ts",
+          "hash": "14425046737686623484",
+          "deps": [
+            "core",
+            "nestjs",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/profiles/avatar.profile.spec.ts",
+          "hash": "13039962554589754204",
+          "deps": [
+            "classes",
+            "core",
+            "nestjs",
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/profiles/avatar.profile.ts",
+          "hash": "3488568393318641207",
+          "deps": [
+            "core",
+            "nestjs",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/profiles/bio.profile.spec.ts",
+          "hash": "17447412257068892046",
+          "deps": [
+            "classes",
+            "core",
+            "nestjs",
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/profiles/bio.profile.ts",
+          "hash": "7991987044185376998",
+          "deps": [
+            "core",
+            "nestjs",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/profiles/user.profile.spec.ts",
+          "hash": "5637338700719805896",
+          "deps": [
+            "classes",
+            "core",
+            "nestjs",
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/nestjs/profiles/user.profile.ts",
+          "hash": "12492411259543982445",
+          "deps": [
+            "core",
+            "nestjs",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/dtos/address.dto.ts",
+          "hash": "17262982070830267036",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/dtos/avatar.dto.ts",
+          "hash": "9044044495101992895",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/dtos/bio.dto.ts",
+          "hash": "7294648879601980945",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/dtos/cart-item.dto.ts",
+          "hash": "5753034068185031412",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/dtos/deep-nest.dto.ts",
+          "hash": "2870489713589156300",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/dtos/type-converter.dto.ts",
+          "hash": "1112280850755268668",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/dtos/user.dto.ts",
+          "hash": "17862516987659591682",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/map-deep-nest.spec.ts",
+          "hash": "3649328309120604438",
+          "deps": [
+            "core",
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/map-mutate.spec.ts",
+          "hash": "10147232286829586616",
+          "deps": [
+            "core",
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/map-naming-conventions.spec.ts",
+          "hash": "490708384189261933",
+          "deps": [
+            "core",
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/map-self.spec.ts",
+          "hash": "1448606240033084628",
+          "deps": [
+            "core",
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/map-type-converter.spec.ts",
+          "hash": "13724334564389409680",
+          "deps": [
+            "core",
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/map.spec.ts",
+          "hash": "13436259642890839566",
+          "deps": [
+            "core",
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/models/address.ts",
+          "hash": "3377905372032245696",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/models/avatar.ts",
+          "hash": "4019654347891734621",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/models/bio.ts",
+          "hash": "10416951638335035578",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/models/cart-item.ts",
+          "hash": "409065200228277584",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/models/deep-nest.ts",
+          "hash": "939877724285574312",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/models/job.ts",
+          "hash": "16684160413548146595",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/models/type-converter.ts",
+          "hash": "3856043735320803784",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/models/user.ts",
+          "hash": "16104892740496969135",
+          "deps": [
+            "pojos"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/profiles/address.profile.ts",
+          "hash": "691006799020396207",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/profiles/avatar.profile.ts",
+          "hash": "7082463352634688359",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/profiles/bio.profile.ts",
+          "hash": "15844576094325236783",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/profiles/type-converter.profile.ts",
+          "hash": "18145230595732116139",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/profiles/user.profile.ts",
+          "hash": "3245196492830730399",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/integration-test/src/pojos/utils/get-user.ts",
+          "hash": "11258652696936283189"
+        },
+        {
+          "file": "packages/integration-test/src/transformer-plugin/issues/486/models.ts",
+          "hash": "18135069505617899954"
+        },
+        {
+          "file": "packages/integration-test/src/transformer-plugin/model.ts",
+          "hash": "12127554067418570662"
+        },
+        {
+          "file": "packages/integration-test/src/transformer-plugin/transformer-plugin.spec.ts",
+          "hash": "3547531694187570005",
+          "deps": [
+            "classes-transformer-plugin",
+            "npm:typescript/lib/tsserverlibrary"
+          ]
+        },
+        {
+          "file": "packages/integration-test/tsconfig.json",
+          "hash": "8292263665829105392"
+        },
+        {
+          "file": "packages/integration-test/tsconfig.lib.json",
+          "hash": "18236116376454182436"
+        },
+        {
+          "file": "packages/integration-test/tsconfig.spec.json",
+          "hash": "6962664236787638617"
+        }
+      ],
+      "zod": [
+        {
+          "file": "packages/zod/.eslintrc.json",
+          "hash": "11902604076208507531"
+        },
+        {
+          "file": "packages/zod/README.md",
+          "hash": "10808843653375349372"
+        },
+        {
+          "file": "packages/zod/jest.config.cjs",
+          "hash": "16680552715687334498"
+        },
+        {
+          "file": "packages/zod/package.json",
+          "hash": "17755726211358738215"
+        },
+        {
+          "file": "packages/zod/project.json",
+          "hash": "3843692104016011657"
+        },
+        {
+          "file": "packages/zod/src/index.ts",
+          "hash": "1770919075573759567"
+        },
+        {
+          "file": "packages/zod/src/lib/zod.spec.ts",
+          "hash": "7134345652700006804"
+        },
+        {
+          "file": "packages/zod/src/lib/zod.ts",
+          "hash": "12617531208382478370"
+        },
+        {
+          "file": "packages/zod/tsconfig.json",
+          "hash": "11493708040870531319"
+        },
+        {
+          "file": "packages/zod/tsconfig.lib.json",
+          "hash": "9731154656780803003"
+        },
+        {
+          "file": "packages/zod/tsconfig.spec.json",
+          "hash": "1331004446282652152"
+        }
+      ],
+      "documentations": [
+        {
+          "file": "packages/documentations/.gitignore",
+          "hash": "16756425970169599954"
+        },
+        {
+          "file": "packages/documentations/README.md",
+          "hash": "17692802906733301777"
+        },
+        {
+          "file": "packages/documentations/babel.config.js",
+          "hash": "6062562399673391227",
+          "deps": [
+            "npm:@docusaurus/core/lib/babel/preset"
+          ]
+        },
+        {
+          "file": "packages/documentations/blog/2019-05-28-first-blog-post.md",
+          "hash": "1519461597485790758"
+        },
+        {
+          "file": "packages/documentations/blog/2019-05-29-long-blog-post.md",
+          "hash": "12941260934599232570"
+        },
+        {
+          "file": "packages/documentations/blog/2021-08-01-mdx-blog-post.mdx",
+          "hash": "12760412308875276107"
+        },
+        {
+          "file": "packages/documentations/blog/2021-08-26-welcome/docusaurus-plushie-banner.jpeg",
+          "hash": "15758227656434439664"
+        },
+        {
+          "file": "packages/documentations/blog/2021-08-26-welcome/index.md",
+          "hash": "14153439119845157138"
+        },
+        {
+          "file": "packages/documentations/blog/authors.yml",
+          "hash": "1831596710718135835"
+        },
+        {
+          "file": "packages/documentations/docs/api/classes/_category_.yml",
+          "hash": "7627767197789063793"
+        },
+        {
+          "file": "packages/documentations/docs/api/classes/index.md",
+          "hash": "7789479341909264822"
+        },
+        {
+          "file": "packages/documentations/docs/api/classes/interfaces/AutoMapOptions.md",
+          "hash": "8911687805777641388"
+        },
+        {
+          "file": "packages/documentations/docs/api/classes/interfaces/_category_.yml",
+          "hash": "8751795223677487140"
+        },
+        {
+          "file": "packages/documentations/docs/api/classes/modules.md",
+          "hash": "4421706848450991928"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/_category_.yml",
+          "hash": "7627767197789063793"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/classes/AutoMapperLogger.md",
+          "hash": "2233197562621822579"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/classes/CamelCaseNamingConvention.md",
+          "hash": "16709691850556504270"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/classes/PascalCaseNamingConvention.md",
+          "hash": "12699731569648832896"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/classes/SnakeCaseNamingConvention.md",
+          "hash": "11616702182388188770"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/classes/_category_.yml",
+          "hash": "7020553570912066003"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/MapFnClassId.md",
+          "hash": "6734281597292837689"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/MappingCallbacksClassId.md",
+          "hash": "4796287610482509565"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/MappingClassId.md",
+          "hash": "10048999974278394692"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/MappingPropertiesClassId.md",
+          "hash": "11372887572983777050"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/MappingPropertyClassId.md",
+          "hash": "985913440575065611"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/MappingTransformationClassId.md",
+          "hash": "5045026261820926004"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/MetadataClassId.md",
+          "hash": "3221997787690427173"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/MetadataObjectMapClassId.md",
+          "hash": "14783087686814610122"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/NestedMappingPairClassId.md",
+          "hash": "16877419313559615153"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/TransformationType.md",
+          "hash": "1380306698628678505"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/enums/_category_.yml",
+          "hash": "14659016556147902210"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/index.md",
+          "hash": "10058511297460383173"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/ConditionPredicate.md",
+          "hash": "3005385176803996028"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/Converter.md",
+          "hash": "8176956700019844940"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/CreateMapperOptions.md",
+          "hash": "8714015268574230468"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/DeferFunction.md",
+          "hash": "2174416615138856297"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/ErrorHandler.md",
+          "hash": "10485880813504318107"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/MapOptions.md",
+          "hash": "2536420542844599165"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/Mapper.md",
+          "hash": "1807093696504772581"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/MappingStrategy.md",
+          "hash": "1744680525415737629"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/MappingStrategyInitializerOptions.md",
+          "hash": "10070239043779595771"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/NamingConvention.md",
+          "hash": "8245499369882830204"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/Resolver.md",
+          "hash": "8018880531836669430"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/TransformerMetadataFactory.md",
+          "hash": "12229363324568614498"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/interfaces/_category_.yml",
+          "hash": "8751795223677487140"
+        },
+        {
+          "file": "packages/documentations/docs/api/core/modules.md",
+          "hash": "13058223591754336079"
+        },
+        {
+          "file": "packages/documentations/docs/api/mikro/_category_.yml",
+          "hash": "7627767197789063793"
+        },
+        {
+          "file": "packages/documentations/docs/api/mikro/index.md",
+          "hash": "10850214052062409006"
+        },
+        {
+          "file": "packages/documentations/docs/api/mikro/modules.md",
+          "hash": "8264868687189054490"
+        },
+        {
+          "file": "packages/documentations/docs/api/nestjs/_category_.yml",
+          "hash": "7627767197789063793"
+        },
+        {
+          "file": "packages/documentations/docs/api/nestjs/classes/AutomapperModule.md",
+          "hash": "11454751709470978349"
+        },
+        {
+          "file": "packages/documentations/docs/api/nestjs/classes/AutomapperProfile.md",
+          "hash": "12646677208140954699"
+        },
+        {
+          "file": "packages/documentations/docs/api/nestjs/classes/_category_.yml",
+          "hash": "7020553570912066003"
+        },
+        {
+          "file": "packages/documentations/docs/api/nestjs/index.md",
+          "hash": "1085515350218386887"
+        },
+        {
+          "file": "packages/documentations/docs/api/nestjs/interfaces/AutomapperAsyncOptions.md",
+          "hash": "8361832743820102303"
+        },
+        {
+          "file": "packages/documentations/docs/api/nestjs/interfaces/AutomapperGlobalOptions.md",
+          "hash": "16996650655737967530"
+        },
+        {
+          "file": "packages/documentations/docs/api/nestjs/interfaces/AutomapperOptionsFactory.md",
+          "hash": "15647995973879273048"
+        },
+        {
+          "file": "packages/documentations/docs/api/nestjs/interfaces/_category_.yml",
+          "hash": "8751795223677487140"
+        },
+        {
+          "file": "packages/documentations/docs/api/nestjs/modules.md",
+          "hash": "8097008508470931673"
+        },
+        {
+          "file": "packages/documentations/docs/api/pojos/_category_.yml",
+          "hash": "7627767197789063793"
+        },
+        {
+          "file": "packages/documentations/docs/api/pojos/classes/PojosMetadataMap.md",
+          "hash": "11243609837840512321"
+        },
+        {
+          "file": "packages/documentations/docs/api/pojos/classes/_category_.yml",
+          "hash": "7020553570912066003"
+        },
+        {
+          "file": "packages/documentations/docs/api/pojos/index.md",
+          "hash": "5742355500694380992"
+        },
+        {
+          "file": "packages/documentations/docs/api/pojos/modules.md",
+          "hash": "1342665891488568532"
+        },
+        {
+          "file": "packages/documentations/docs/api/sequelize/_category_.yml",
+          "hash": "7627767197789063793"
+        },
+        {
+          "file": "packages/documentations/docs/api/sequelize/index.md",
+          "hash": "5974128133464890754"
+        },
+        {
+          "file": "packages/documentations/docs/api/sequelize/modules.md",
+          "hash": "4103591442629528054"
+        },
+        {
+          "file": "packages/documentations/docs/fundamentals/auto-flattening.mdx",
+          "hash": "3170355332080504668"
+        },
+        {
+          "file": "packages/documentations/docs/fundamentals/mapper.mdx",
+          "hash": "3248251848068054868"
+        },
+        {
+          "file": "packages/documentations/docs/fundamentals/mapping.mdx",
+          "hash": "18056648044677674322"
+        },
+        {
+          "file": "packages/documentations/docs/fundamentals/mutation.mdx",
+          "hash": "3472056107782576515"
+        },
+        {
+          "file": "packages/documentations/docs/fundamentals/naming-convention.mdx",
+          "hash": "16586662826941457149"
+        },
+        {
+          "file": "packages/documentations/docs/getting-started/installation.mdx",
+          "hash": "11371057989597355463"
+        },
+        {
+          "file": "packages/documentations/docs/getting-started/migrate-v8.mdx",
+          "hash": "18119764670902476510"
+        },
+        {
+          "file": "packages/documentations/docs/getting-started/overview.mdx",
+          "hash": "9278987707497965686"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/after-map.mdx",
+          "hash": "5949000915939462397"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/auto-map.mdx",
+          "hash": "5113654230813642772"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/before-map.mdx",
+          "hash": "5198151205889293655"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/construct-using.mdx",
+          "hash": "13493252880148738354"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/extend.mdx",
+          "hash": "6953373887299574377"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/condition.mdx",
+          "hash": "11299318072869477865"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/convert-using.mdx",
+          "hash": "4103911906986464488"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/from-value.mdx",
+          "hash": "16491498966596505200"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/ignore.mdx",
+          "hash": "16922997806460882098"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/map-defer.mdx",
+          "hash": "3888677089591024020"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/map-from.mdx",
+          "hash": "39168624866348199"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/map-with-arguments.mdx",
+          "hash": "12982470915548095443"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/map-with.mdx",
+          "hash": "13549790738893740412"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/null-substitution.mdx",
+          "hash": "206732275672892408"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/overview.mdx",
+          "hash": "10342994662564413740"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-member/undefined-substitution.mdx",
+          "hash": "2505048206033304583"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/for-self.mdx",
+          "hash": "91069325832101233"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/naming-conventions.mdx",
+          "hash": "17995283854567930204"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/overview.mdx",
+          "hash": "17047724808863294105"
+        },
+        {
+          "file": "packages/documentations/docs/mapping-configuration/type-converters.mdx",
+          "hash": "13439905186919079793"
+        },
+        {
+          "file": "packages/documentations/docs/misc/fake-async.mdx",
+          "hash": "3915841070901373114"
+        },
+        {
+          "file": "packages/documentations/docs/misc/mapped-types.mdx",
+          "hash": "13796854356953478548"
+        },
+        {
+          "file": "packages/documentations/docs/misc/self-mapping.mdx",
+          "hash": "6579908935740434075"
+        },
+        {
+          "file": "packages/documentations/docs/misc/transformer-plugin.mdx",
+          "hash": "12833825980525121809"
+        },
+        {
+          "file": "packages/documentations/docs/nestjs.mdx",
+          "hash": "1475197401092382426"
+        },
+        {
+          "file": "packages/documentations/docs/strategies/classes.mdx",
+          "hash": "8579456533469311512"
+        },
+        {
+          "file": "packages/documentations/docs/strategies/mikro.mdx",
+          "hash": "1006272035219492234"
+        },
+        {
+          "file": "packages/documentations/docs/strategies/pojos.mdx",
+          "hash": "1095793459023449809"
+        },
+        {
+          "file": "packages/documentations/docs/strategies/sequelize.mdx",
+          "hash": "17376086862034965714"
+        },
+        {
+          "file": "packages/documentations/docs/tutorial/create-mapper.mdx",
+          "hash": "12550191163157666679"
+        },
+        {
+          "file": "packages/documentations/docs/tutorial/create-mapping.mdx",
+          "hash": "6128152774659170009"
+        },
+        {
+          "file": "packages/documentations/docs/tutorial/mapping-configurations.mdx",
+          "hash": "17752134849673166605"
+        },
+        {
+          "file": "packages/documentations/docs/tutorial/mapping-profile.mdx",
+          "hash": "2609851003280428800"
+        },
+        {
+          "file": "packages/documentations/docs/tutorial/preface.mdx",
+          "hash": "13710333974565804460"
+        },
+        {
+          "file": "packages/documentations/docusaurus.config.js",
+          "hash": "8793272534450310021",
+          "deps": [
+            "npm:prism-react-renderer/themes/github",
+            "npm:prism-react-renderer/themes/oceanicNext"
+          ]
+        },
+        {
+          "file": "packages/documentations/package.json",
+          "hash": "7995459483496196466"
+        },
+        {
+          "file": "packages/documentations/pnpm-lock.yaml",
+          "hash": "7648197226042784951"
+        },
+        {
+          "file": "packages/documentations/project.json",
+          "hash": "2538200608557148001"
+        },
+        {
+          "file": "packages/documentations/sidebars.js",
+          "hash": "8378860260964617973"
+        },
+        {
+          "file": "packages/documentations/src/components/HomepageFeatures/index.js",
+          "hash": "15607086511797508220",
+          "deps": [
+            "npm:react",
+            "npm:clsx",
+            "npm:@site/static/img/undraw_docusaurus_tree.svg"
+          ]
+        },
+        {
+          "file": "packages/documentations/src/components/HomepageFeatures/styles.module.css",
+          "hash": "4135754564476744106"
+        },
+        {
+          "file": "packages/documentations/src/css/custom.css",
+          "hash": "6231128812721313058"
+        },
+        {
+          "file": "packages/documentations/src/pages/index.js",
+          "hash": "14639857492311847769",
+          "deps": [
+            "npm:react",
+            "npm:clsx",
+            "npm:@theme/Layout",
+            "npm:@docusaurus/Link",
+            "npm:@docusaurus/useDocusaurusContext",
+            "npm:@site/src/components/HomepageFeatures"
+          ]
+        },
+        {
+          "file": "packages/documentations/src/pages/index.module.css",
+          "hash": "5688491618446964666"
+        },
+        {
+          "file": "packages/documentations/static/.nojekyll",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "packages/documentations/static/for-member.gif",
+          "hash": "17475389501061318707"
+        },
+        {
+          "file": "packages/documentations/static/img/docusaurus.png",
+          "hash": "11805897491343913808"
+        },
+        {
+          "file": "packages/documentations/static/img/favicon.ico",
+          "hash": "12018898405833912528"
+        },
+        {
+          "file": "packages/documentations/static/img/logo.svg",
+          "hash": "15756779054106865036"
+        },
+        {
+          "file": "packages/documentations/static/img/tutorial/docsVersionDropdown.png",
+          "hash": "6885437977057327417"
+        },
+        {
+          "file": "packages/documentations/static/img/tutorial/localeDropdown.png",
+          "hash": "253269832391595414"
+        },
+        {
+          "file": "packages/documentations/static/img/undraw_docusaurus_mountain.svg",
+          "hash": "14081778507541877421"
+        },
+        {
+          "file": "packages/documentations/static/img/undraw_docusaurus_react.svg",
+          "hash": "17162343818337932230"
+        },
+        {
+          "file": "packages/documentations/static/img/undraw_docusaurus_tree.svg",
+          "hash": "12684630426846910715"
+        }
+      ],
+      "pojos": [
+        {
+          "file": "packages/pojos/.eslintrc.json",
+          "hash": "17869084471460511704"
+        },
+        {
+          "file": "packages/pojos/jest.config.cjs",
+          "hash": "2049475925632975810"
+        },
+        {
+          "file": "packages/pojos/package.json",
+          "hash": "5327284014296122699",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/pojos/project.json",
+          "hash": "5575709624099082848"
+        },
+        {
+          "file": "packages/pojos/src/README.md",
+          "hash": "8656911862768787988"
+        },
+        {
+          "file": "packages/pojos/src/index.ts",
+          "hash": "401198296594912033"
+        },
+        {
+          "file": "packages/pojos/src/lib/metadata-map.ts",
+          "hash": "13627398814793603804",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/pojos/src/lib/pojos.ts",
+          "hash": "8796723858031570354",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/pojos/tsconfig.json",
+          "hash": "3458275629212578133"
+        },
+        {
+          "file": "packages/pojos/tsconfig.lib.json",
+          "hash": "7439940686882043217"
+        },
+        {
+          "file": "packages/pojos/tsconfig.spec.json",
+          "hash": "6017982946827946062"
+        }
+      ],
+      "core": [
+        {
+          "file": "packages/core/.eslintrc.json",
+          "hash": "4410031516423746992"
+        },
+        {
+          "file": "packages/core/jest.config.cjs",
+          "hash": "4882359623507005547"
+        },
+        {
+          "file": "packages/core/package.json",
+          "hash": "11722929138959255233"
+        },
+        {
+          "file": "packages/core/project.json",
+          "hash": "8183808145833706333"
+        },
+        {
+          "file": "packages/core/src/README.md",
+          "hash": "4198012304118534074"
+        },
+        {
+          "file": "packages/core/src/index.ts",
+          "hash": "4205463247946932238"
+        },
+        {
+          "file": "packages/core/src/lib/core.ts",
+          "hash": "11381555476600905419"
+        },
+        {
+          "file": "packages/core/src/lib/default-strategy-initializer-options.ts",
+          "hash": "607589206574196401"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/after-map.ts",
+          "hash": "1672116945227992820"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/auto-map.ts",
+          "hash": "5895723587710063433"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/before-map.ts",
+          "hash": "11447430924057536377"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/construct-using.ts",
+          "hash": "13161040094451598716"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/extend.ts",
+          "hash": "122289101949057977"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/for-member.ts",
+          "hash": "15119648522238535161"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/for-self.ts",
+          "hash": "15622925415170066714"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/naming-conventions.ts",
+          "hash": "9092552763667279188"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/__snapshots__/extend.spec.ts.snap",
+          "hash": "13968578564139562941"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/__snapshots__/for-member.spec.ts.snap",
+          "hash": "9649877246887493280"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/__snapshots__/for-self.spec.ts.snap",
+          "hash": "12284196334672309120"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/after-map.spec.ts",
+          "hash": "16031093127767215452"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/before-map.spec.ts",
+          "hash": "6621500015326257816"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/construct-using.spec.ts",
+          "hash": "15757514172080640133"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/extend.spec.ts",
+          "hash": "4533462951125139034"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/for-member.spec.ts",
+          "hash": "16426502184093886458"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/for-self.spec.ts",
+          "hash": "8187710376680832995"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/naming-conventions.spec.ts",
+          "hash": "16115172559044973717"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/specs/type-converters.spec.ts",
+          "hash": "7070704528218506917"
+        },
+        {
+          "file": "packages/core/src/lib/mapping-configurations/type-converters.ts",
+          "hash": "9486910745273272095"
+        },
+        {
+          "file": "packages/core/src/lib/mappings/add-profile.ts",
+          "hash": "10045501939764183979"
+        },
+        {
+          "file": "packages/core/src/lib/mappings/apply-metadata.ts",
+          "hash": "4305466563169748509"
+        },
+        {
+          "file": "packages/core/src/lib/mappings/create-initial-mapping.ts",
+          "hash": "6200613493127269166"
+        },
+        {
+          "file": "packages/core/src/lib/mappings/create-map.ts",
+          "hash": "14325617711718933625"
+        },
+        {
+          "file": "packages/core/src/lib/mappings/map-member.ts",
+          "hash": "2236451360999816888"
+        },
+        {
+          "file": "packages/core/src/lib/mappings/map.ts",
+          "hash": "10504166803352342556"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/condition.ts",
+          "hash": "10430851097616895688"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/convert-using.ts",
+          "hash": "16372986615762472252"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/from-value.ts",
+          "hash": "8921237743862094082"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/ignore.ts",
+          "hash": "14515296067989678172"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/map-defer.ts",
+          "hash": "12410736326294242758"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/map-from.ts",
+          "hash": "4047460477099049950"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/map-initialize.ts",
+          "hash": "5096379246351160382"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/map-with-arguments.ts",
+          "hash": "10737610739487414707"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/map-with.ts",
+          "hash": "12845573064811729516"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/null-substitution.ts",
+          "hash": "5077753484848266755"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/pre-condition.ts",
+          "hash": "5267019633148799604"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/condition.spec.ts",
+          "hash": "12068839610442609525"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/convert-using.spec.ts",
+          "hash": "1202140828842514428"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/from-value.spec.ts",
+          "hash": "8031709388254063900"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/ignore.spec.ts",
+          "hash": "661099744872871019"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/map-defer.spec.ts",
+          "hash": "7673927271276766683"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/map-from.spec.ts",
+          "hash": "13005307702842640576"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/map-with-arguments.spec.ts",
+          "hash": "277713558206809883"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/map-with.spec.ts",
+          "hash": "1273791377651448206"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/null-substitution.spec.ts",
+          "hash": "15093856269727451993"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/pre-condition.spec.ts",
+          "hash": "14783078666854681133"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/specs/undefined-substitution.spec.ts",
+          "hash": "6795262570535829270"
+        },
+        {
+          "file": "packages/core/src/lib/member-map-functions/undefined-substitution.ts",
+          "hash": "13101844551287254181"
+        },
+        {
+          "file": "packages/core/src/lib/naming-conventions/camel-case-naming-convention.ts",
+          "hash": "17328222141904392253"
+        },
+        {
+          "file": "packages/core/src/lib/naming-conventions/pascal-case-naming-convention.ts",
+          "hash": "15337549159338606952"
+        },
+        {
+          "file": "packages/core/src/lib/naming-conventions/snake-case-naming-convention.ts",
+          "hash": "5061272726632734530"
+        },
+        {
+          "file": "packages/core/src/lib/naming-conventions/specs/camel-case-naming-convention.spec.ts",
+          "hash": "8742517900567709283"
+        },
+        {
+          "file": "packages/core/src/lib/naming-conventions/specs/pascal-case-naming-convention.spec.ts",
+          "hash": "9572805835665397132"
+        },
+        {
+          "file": "packages/core/src/lib/naming-conventions/specs/snake-case-naming-convention.spec.ts",
+          "hash": "8329366065990635077"
+        },
+        {
+          "file": "packages/core/src/lib/symbols.ts",
+          "hash": "5412715687900106327"
+        },
+        {
+          "file": "packages/core/src/lib/types.ts",
+          "hash": "15363372079227154534"
+        },
+        {
+          "file": "packages/core/src/lib/utils/assert-unmapped-properties.ts",
+          "hash": "10243342220386222900"
+        },
+        {
+          "file": "packages/core/src/lib/utils/get-mapping.ts",
+          "hash": "2901806595853560497"
+        },
+        {
+          "file": "packages/core/src/lib/utils/get-member-path.ts",
+          "hash": "6202362784062081154"
+        },
+        {
+          "file": "packages/core/src/lib/utils/get-path-recursive.ts",
+          "hash": "17203333482560721550"
+        },
+        {
+          "file": "packages/core/src/lib/utils/get-path.ts",
+          "hash": "1058704844925065418"
+        },
+        {
+          "file": "packages/core/src/lib/utils/get.ts",
+          "hash": "6296228880724643624"
+        },
+        {
+          "file": "packages/core/src/lib/utils/is-date-constructor.ts",
+          "hash": "6634775274385584522"
+        },
+        {
+          "file": "packages/core/src/lib/utils/is-defined.ts",
+          "hash": "11956498397968518521"
+        },
+        {
+          "file": "packages/core/src/lib/utils/is-empty.ts",
+          "hash": "9075031497729458204"
+        },
+        {
+          "file": "packages/core/src/lib/utils/is-primitive-array-equal.ts",
+          "hash": "17448072899989899319"
+        },
+        {
+          "file": "packages/core/src/lib/utils/is-primitive-constructor.ts",
+          "hash": "10353323076938434493"
+        },
+        {
+          "file": "packages/core/src/lib/utils/is-resolver.ts",
+          "hash": "14037419244264102316"
+        },
+        {
+          "file": "packages/core/src/lib/utils/is-same-path.ts",
+          "hash": "17762692659879101101"
+        },
+        {
+          "file": "packages/core/src/lib/utils/logger.ts",
+          "hash": "17729204112200230532"
+        },
+        {
+          "file": "packages/core/src/lib/utils/normalize-naming-conventions.ts",
+          "hash": "5125336431217336952"
+        },
+        {
+          "file": "packages/core/src/lib/utils/recursion.ts",
+          "hash": "677768029252806475"
+        },
+        {
+          "file": "packages/core/src/lib/utils/set.ts",
+          "hash": "13971883834277076777"
+        },
+        {
+          "file": "packages/core/src/lib/utils/specs/get.spec.ts",
+          "hash": "6578526394918072078"
+        },
+        {
+          "file": "packages/core/src/lib/utils/specs/is-defined.spec.ts",
+          "hash": "14544596910027461381"
+        },
+        {
+          "file": "packages/core/src/lib/utils/specs/is-primitive-array-equal.spec.ts",
+          "hash": "8377053340467520195"
+        },
+        {
+          "file": "packages/core/src/lib/utils/specs/set.spec.ts",
+          "hash": "18308268767848633749"
+        },
+        {
+          "file": "packages/core/src/lib/utils/store-metadata.ts",
+          "hash": "807142324815813820"
+        },
+        {
+          "file": "packages/core/src/lib/utils/to-selector.ts",
+          "hash": "8284098999379055702"
+        },
+        {
+          "file": "packages/core/src/lib/utils/unique-path.ts",
+          "hash": "941469525805346447"
+        },
+        {
+          "file": "packages/core/tsconfig.json",
+          "hash": "3458275629212578133"
+        },
+        {
+          "file": "packages/core/tsconfig.lib.json",
+          "hash": "7439940686882043217"
+        },
+        {
+          "file": "packages/core/tsconfig.spec.json",
+          "hash": "16679667824085150506"
+        }
+      ],
+      "nestjs": [
+        {
+          "file": "packages/nestjs/.eslintrc.json",
+          "hash": "15372734851750358326"
+        },
+        {
+          "file": "packages/nestjs/jest.config.cjs",
+          "hash": "2643635423157004951"
+        },
+        {
+          "file": "packages/nestjs/package.json",
+          "hash": "7625297526414704775",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/nestjs/project.json",
+          "hash": "1573949116267636581"
+        },
+        {
+          "file": "packages/nestjs/src/README.md",
+          "hash": "10157543303582929163"
+        },
+        {
+          "file": "packages/nestjs/src/index.ts",
+          "hash": "17030127916427361017"
+        },
+        {
+          "file": "packages/nestjs/src/lib/automapper-nestjs.module.ts",
+          "hash": "7225533479530180842",
+          "deps": [
+            "core",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/nestjs/src/lib/automapper-profile.ts",
+          "hash": "16484948085341950912",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/nestjs/src/lib/di/get-mapper-token.ts",
+          "hash": "7669249148076959915"
+        },
+        {
+          "file": "packages/nestjs/src/lib/di/inject-mapper.ts",
+          "hash": "4749703124741990302",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/nestjs/src/lib/map.interceptor.ts",
+          "hash": "9789453223007750016",
+          "deps": [
+            "core",
+            "npm:@nestjs/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "packages/nestjs/src/lib/map.pipe.ts",
+          "hash": "7557610734297898257",
+          "deps": [
+            "core",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/nestjs/src/lib/options.ts",
+          "hash": "396705634678225416",
+          "deps": [
+            "core",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/nestjs/src/lib/utils/memoize.ts",
+          "hash": "6278394798640839296"
+        },
+        {
+          "file": "packages/nestjs/src/lib/utils/transform.ts",
+          "hash": "7073292870889428967",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "packages/nestjs/tsconfig.json",
+          "hash": "3458275629212578133"
+        },
+        {
+          "file": "packages/nestjs/tsconfig.lib.json",
+          "hash": "833138341256778902"
+        },
+        {
+          "file": "packages/nestjs/tsconfig.spec.json",
+          "hash": "6017982946827946062"
+        }
+      ],
+      "documentation": [
+        {
+          "file": "packages/documentation/.gitignore",
+          "hash": "16756425970169599954"
+        },
+        {
+          "file": "packages/documentation/README.md",
+          "hash": "17852570793030669184"
+        },
+        {
+          "file": "packages/documentation/babel.config.js",
+          "hash": "1308513646348002384",
+          "deps": [
+            "npm:@docusaurus/core/lib/babel/preset"
+          ]
+        },
+        {
+          "file": "packages/documentation/blog/2019-05-28-first-blog-post.md",
+          "hash": "12866751948486589962"
+        },
+        {
+          "file": "packages/documentation/blog/2019-05-29-long-blog-post.md",
+          "hash": "12941260934599232570"
+        },
+        {
+          "file": "packages/documentation/blog/2021-08-01-mdx-blog-post.mdx",
+          "hash": "12760412308875276107"
+        },
+        {
+          "file": "packages/documentation/blog/2021-08-26-welcome/docusaurus-plushie-banner.jpeg",
+          "hash": "15758227656434439664"
+        },
+        {
+          "file": "packages/documentation/blog/2021-08-26-welcome/index.md",
+          "hash": "2001582384796769796"
+        },
+        {
+          "file": "packages/documentation/blog/authors.yml",
+          "hash": "16744291041534729391"
+        },
+        {
+          "file": "packages/documentation/docs/fundamentals/auto-flattening.mdx",
+          "hash": "3170355332080504668"
+        },
+        {
+          "file": "packages/documentation/docs/fundamentals/mapper.mdx",
+          "hash": "3248251848068054868"
+        },
+        {
+          "file": "packages/documentation/docs/fundamentals/mapping.mdx",
+          "hash": "18056648044677674322"
+        },
+        {
+          "file": "packages/documentation/docs/fundamentals/mutation.mdx",
+          "hash": "3472056107782576515"
+        },
+        {
+          "file": "packages/documentation/docs/fundamentals/naming-convention.mdx",
+          "hash": "16586662826941457149"
+        },
+        {
+          "file": "packages/documentation/docs/getting-started/installation.mdx",
+          "hash": "2739272808878724093"
+        },
+        {
+          "file": "packages/documentation/docs/getting-started/migrate-v8.mdx",
+          "hash": "18119764670902476510"
+        },
+        {
+          "file": "packages/documentation/docs/getting-started/overview.mdx",
+          "hash": "9278987707497965686"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/after-map.mdx",
+          "hash": "8428330824042136578"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/auto-map.mdx",
+          "hash": "5026949635243410502"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/before-map.mdx",
+          "hash": "5198151205889293655"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/construct-using.mdx",
+          "hash": "13493252880148738354"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/extend.mdx",
+          "hash": "6953373887299574377"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/condition.mdx",
+          "hash": "11299318072869477865"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/convert-using.mdx",
+          "hash": "4103911906986464488"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/from-value.mdx",
+          "hash": "16491498966596505200"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/ignore.mdx",
+          "hash": "16922997806460882098"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/map-defer.mdx",
+          "hash": "3888677089591024020"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/map-from.mdx",
+          "hash": "39168624866348199"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/map-with-arguments.mdx",
+          "hash": "12982470915548095443"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/map-with.mdx",
+          "hash": "13549790738893740412"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/null-substitution.mdx",
+          "hash": "206732275672892408"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/overview.mdx",
+          "hash": "10342994662564413740"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-member/undefined-substitution.mdx",
+          "hash": "2505048206033304583"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/for-self.mdx",
+          "hash": "91069325832101233"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/naming-conventions.mdx",
+          "hash": "17995283854567930204"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/overview.mdx",
+          "hash": "836942935729500667"
+        },
+        {
+          "file": "packages/documentation/docs/mapping-configuration/type-converters.mdx",
+          "hash": "13439905186919079793"
+        },
+        {
+          "file": "packages/documentation/docs/misc/fake-async.mdx",
+          "hash": "3915841070901373114"
+        },
+        {
+          "file": "packages/documentation/docs/misc/mapped-types.mdx",
+          "hash": "13796854356953478548"
+        },
+        {
+          "file": "packages/documentation/docs/misc/self-mapping.mdx",
+          "hash": "6579908935740434075"
+        },
+        {
+          "file": "packages/documentation/docs/misc/transformer-plugin.mdx",
+          "hash": "12833825980525121809"
+        },
+        {
+          "file": "packages/documentation/docs/nestjs.mdx",
+          "hash": "1475197401092382426"
+        },
+        {
+          "file": "packages/documentation/docs/strategies/classes.mdx",
+          "hash": "8579456533469311512"
+        },
+        {
+          "file": "packages/documentation/docs/strategies/mikro.mdx",
+          "hash": "1006272035219492234"
+        },
+        {
+          "file": "packages/documentation/docs/strategies/pojos.mdx",
+          "hash": "1095793459023449809"
+        },
+        {
+          "file": "packages/documentation/docs/strategies/sequelize.mdx",
+          "hash": "17376086862034965714"
+        },
+        {
+          "file": "packages/documentation/docs/tutorial/create-mapper.mdx",
+          "hash": "11668932224442681977"
+        },
+        {
+          "file": "packages/documentation/docs/tutorial/create-mapping.mdx",
+          "hash": "6128152774659170009"
+        },
+        {
+          "file": "packages/documentation/docs/tutorial/mapping-configurations.mdx",
+          "hash": "17752134849673166605"
+        },
+        {
+          "file": "packages/documentation/docs/tutorial/mapping-profile.mdx",
+          "hash": "2609851003280428800"
+        },
+        {
+          "file": "packages/documentation/docs/tutorial/preface.mdx",
+          "hash": "13710333974565804460"
+        },
+        {
+          "file": "packages/documentation/docusaurus.config.js",
+          "hash": "9428014669481659538",
+          "deps": [
+            "npm:prism-react-renderer/themes/github",
+            "npm:prism-react-renderer/themes/dracula"
+          ]
+        },
+        {
+          "file": "packages/documentation/package.json",
+          "hash": "534739245718962220"
+        },
+        {
+          "file": "packages/documentation/pnpm-lock.yaml",
+          "hash": "16889405028940355872"
+        },
+        {
+          "file": "packages/documentation/project.json",
+          "hash": "6198003350410572211"
+        },
+        {
+          "file": "packages/documentation/sidebars.js",
+          "hash": "2996888066092314499"
+        },
+        {
+          "file": "packages/documentation/src/components/HomepageFeatures/index.js",
+          "hash": "12929009194370541658",
+          "deps": [
+            "npm:react",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/documentation/src/components/HomepageFeatures/styles.module.css",
+          "hash": "14149773169115351739"
+        },
+        {
+          "file": "packages/documentation/src/css/custom.css",
+          "hash": "18078998839091967440"
+        },
+        {
+          "file": "packages/documentation/src/pages/index.js",
+          "hash": "3020803973513159822",
+          "deps": [
+            "npm:react",
+            "npm:clsx",
+            "npm:@docusaurus/Link",
+            "npm:@docusaurus/useDocusaurusContext",
+            "npm:@theme/Layout",
+            "npm:@site/src/components/HomepageFeatures"
+          ]
+        },
+        {
+          "file": "packages/documentation/src/pages/index.module.css",
+          "hash": "2272732276868299116"
+        },
+        {
+          "file": "packages/documentation/src/pages/markdown-page.md",
+          "hash": "2637912770613796076"
+        },
+        {
+          "file": "packages/documentation/static/.nojekyll",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "packages/documentation/static/for-member.gif",
+          "hash": "17475389501061318707"
+        },
+        {
+          "file": "packages/documentation/static/img/docusaurus-social-card.jpg",
+          "hash": "11663222046504176426"
+        },
+        {
+          "file": "packages/documentation/static/img/docusaurus.png",
+          "hash": "11805897491343913808"
+        },
+        {
+          "file": "packages/documentation/static/img/favicon.ico",
+          "hash": "12018898405833912528"
+        },
+        {
+          "file": "packages/documentation/static/img/logo.png",
+          "hash": "16688313106838322320"
+        },
+        {
+          "file": "packages/documentation/static/img/logo.svg",
+          "hash": "15756779054106865036"
+        },
+        {
+          "file": "packages/documentation/static/img/undraw_docusaurus_mountain.svg",
+          "hash": "14081778507541877421"
+        },
+        {
+          "file": "packages/documentation/static/img/undraw_docusaurus_react.svg",
+          "hash": "17162343818337932230"
+        },
+        {
+          "file": "packages/documentation/static/img/undraw_docusaurus_tree.svg",
+          "hash": "12684630426846910715"
+        }
+      ]
+    }
+  }
+}

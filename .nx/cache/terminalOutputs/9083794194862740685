@@ -1,0 +1,214 @@
+[33m[1m[1m●[22m[1m Validation Warning[22m:[39m
+[33m[39m
+[33m  Unknown option [1m"coverageDirectory"[22m with value [1m"../../coverage/packages/integration-test"[22m was found.[39m
+[33m  This is probably a typing mistake. Fixing it will remove this message.[39m
+[33m[39m
+[33m  [1mConfiguration Documentation:[22m[39m
+[33m  https://jestjs.io/docs/configuration[39m
+[33m[39m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-callback.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-extra-args.spec.ts[22m
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/transformer-plugin/[22m[1mtransformer-plugin.spec.ts[22m
+  [1m● [22mTest suite failed to run
+
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m162[0m:[93m13[0m - [91merror[0m[90m TS2322: [0mType 'Node | undefined' is not assignable to type 'SourceFile'.
+      Type 'undefined' is not assignable to type 'SourceFile'.
+
+    [7m162[0m             return visitedSourceFile;
+    [7m   [0m [91m            ~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m167[0m:[93m13[0m - [91merror[0m[90m TS2345: [0mArgument of type 'Node | undefined' is not assignable to parameter of type 'SourceFile'.
+      Type 'undefined' is not assignable to type 'SourceFile'.
+
+    [7m167[0m             visitedSourceFile,
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m169[0m:[93m18[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m169[0m                 (visitedSourceFile.statements || ([] as Statement[])).filter(
+    [7m   [0m [91m                 ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m169[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'statements' does not exist on type 'Node'.
+
+    [7m169[0m                 (visitedSourceFile.statements || ([] as Statement[])).filter(
+    [7m   [0m [91m                                   ~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m170[0m:[93m22[0m - [91merror[0m[90m TS7006: [0mParameter 'statement' implicitly has an 'any' type.
+
+    [7m170[0m                     (statement) =>
+    [7m   [0m [91m                     ~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m174[0m:[93m13[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m174[0m             visitedSourceFile.isDeclarationFile,
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m174[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'isDeclarationFile' does not exist on type 'Node'.
+
+    [7m174[0m             visitedSourceFile.isDeclarationFile,
+    [7m   [0m [91m                              ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m175[0m:[93m13[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m175[0m             visitedSourceFile.referencedFiles,
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m175[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'referencedFiles' does not exist on type 'Node'.
+
+    [7m175[0m             visitedSourceFile.referencedFiles,
+    [7m   [0m [91m                              ~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m176[0m:[93m13[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m176[0m             visitedSourceFile.typeReferenceDirectives,
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m176[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'typeReferenceDirectives' does not exist on type 'Node'.
+
+    [7m176[0m             visitedSourceFile.typeReferenceDirectives,
+    [7m   [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m177[0m:[93m13[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m177[0m             visitedSourceFile.hasNoDefaultLib,
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m177[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'hasNoDefaultLib' does not exist on type 'Node'.
+
+    [7m177[0m             visitedSourceFile.hasNoDefaultLib,
+    [7m   [0m [91m                              ~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m178[0m:[93m13[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m178[0m             visitedSourceFile.libReferenceDirectives
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m178[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'libReferenceDirectives' does not exist on type 'Node'.
+
+    [7m178[0m             visitedSourceFile.libReferenceDirectives
+    [7m   [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-spacex.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap-deep-nest.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-mutate.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-naming-conventions.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap-naming-conventions.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/[22m[1mapp.controller.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-deep-nest.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/profiles/[22m[1muser.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/[22m[1mapp.service.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/profiles/[22m[1mbio.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/497/[22m[1m497.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-self-reference.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/503/[22m[1m503.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap-self.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/foo-extend/[22m[1mfoo-extend.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/358/[22m[1m358.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/profiles/[22m[1mavatar.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-without-decorators.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/foo/[22m[1mfoo.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-async.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-condition-substitution-model.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-getter-only.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/foo-extend/[22m[1mfoo-extend.controller.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-custom-constructor.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-self.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/nestjs/profiles/[22m[1maddress.profile.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/480/[22m[1m480.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-chained.spec.ts[22m
+  [1m● [22mConsole
+
+    [2mconsole.log[22m
+      C { c: 'value!!!!!!', extraC: 'value extra!!' }
+[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/classes/map-chained.spec.ts[39m[0m[2m:70:17)[22m[2m[22m
+
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/[22m[1mmap-type-converter.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/docs/auto-flattening/[22m[1mauto-flattening.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/527/[22m[1m527.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/docs/tutorial/[22m[1mdocs-tutorial.spec.ts[22m
+  [1m● [22mConsole
+
+    [2mconsole.log[22m
+      UserDto {
+        firstName: 'Chau',
+        lastName: 'Tran',
+        username: 'ctran',
+        bio: BioDto {
+          jobTitle: 'Developer',
+          jobSalary: 99999,
+          birthday: 'Thu Jun 27 2024',
+          avatarUrl: 'google.com'
+        },
+        fullName: 'Chau Tran'
+      }
+[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/classes/docs/tutorial/docs-tutorial.spec.ts[39m[0m[2m:55:17)[22m[2m[22m
+
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/457/[22m[1m457.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/479/[22m[1m479.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap-mutate.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/classes/issues/396/[22m[1m396.spec.ts[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [0m[7m[37m integration-test [39m[27m[0m [2mpackages/integration-test/src/pojos/[22m[1mmap-type-converter.spec.ts[22m
+
+[1mSummary of all failing tests[22m
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2msrc/transformer-plugin/[22m[1mtransformer-plugin.spec.ts[22m
+  [1m● [22mTest suite failed to run
+
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m162[0m:[93m13[0m - [91merror[0m[90m TS2322: [0mType 'Node | undefined' is not assignable to type 'SourceFile'.
+      Type 'undefined' is not assignable to type 'SourceFile'.
+
+    [7m162[0m             return visitedSourceFile;
+    [7m   [0m [91m            ~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m167[0m:[93m13[0m - [91merror[0m[90m TS2345: [0mArgument of type 'Node | undefined' is not assignable to parameter of type 'SourceFile'.
+      Type 'undefined' is not assignable to type 'SourceFile'.
+
+    [7m167[0m             visitedSourceFile,
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m169[0m:[93m18[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m169[0m                 (visitedSourceFile.statements || ([] as Statement[])).filter(
+    [7m   [0m [91m                 ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m169[0m:[93m36[0m - [91merror[0m[90m TS2339: [0mProperty 'statements' does not exist on type 'Node'.
+
+    [7m169[0m                 (visitedSourceFile.statements || ([] as Statement[])).filter(
+    [7m   [0m [91m                                   ~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m170[0m:[93m22[0m - [91merror[0m[90m TS7006: [0mParameter 'statement' implicitly has an 'any' type.
+
+    [7m170[0m                     (statement) =>
+    [7m   [0m [91m                     ~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m174[0m:[93m13[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m174[0m             visitedSourceFile.isDeclarationFile,
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m174[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'isDeclarationFile' does not exist on type 'Node'.
+
+    [7m174[0m             visitedSourceFile.isDeclarationFile,
+    [7m   [0m [91m                              ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m175[0m:[93m13[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m175[0m             visitedSourceFile.referencedFiles,
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m175[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'referencedFiles' does not exist on type 'Node'.
+
+    [7m175[0m             visitedSourceFile.referencedFiles,
+    [7m   [0m [91m                              ~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m176[0m:[93m13[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m176[0m             visitedSourceFile.typeReferenceDirectives,
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m176[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'typeReferenceDirectives' does not exist on type 'Node'.
+
+    [7m176[0m             visitedSourceFile.typeReferenceDirectives,
+    [7m   [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m177[0m:[93m13[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m177[0m             visitedSourceFile.hasNoDefaultLib,
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m177[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'hasNoDefaultLib' does not exist on type 'Node'.
+
+    [7m177[0m             visitedSourceFile.hasNoDefaultLib,
+    [7m   [0m [91m                              ~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m178[0m:[93m13[0m - [91merror[0m[90m TS18048: [0m'visitedSourceFile' is possibly 'undefined'.
+
+    [7m178[0m             visitedSourceFile.libReferenceDirectives
+    [7m   [0m [91m            ~~~~~~~~~~~~~~~~~[0m
+    [96mpackages/classes/transformer-plugin/src/lib/model-visitor.ts[0m:[93m178[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'libReferenceDirectives' does not exist on type 'Node'.
+
+    [7m178[0m             visitedSourceFile.libReferenceDirectives
+    [7m   [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[1mTest Suites: [22m[1m[31m1 failed[39m[22m, [1m[32m41 passed[39m[22m, 42 total
+[1mTests:       [22m[1m[32m108 passed[39m[22m, 108 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        6.553 s, estimated 8 s
+[2mRan all test suites[22m[2m.[22m
